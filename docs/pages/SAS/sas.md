@@ -1,7 +1,6 @@
 ---
 title: SAS
 nav_order: 1
-parent: linear_mixed_models
 has_children: True
 ---
 

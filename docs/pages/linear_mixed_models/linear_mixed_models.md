@@ -1,5 +1,5 @@
 ---
-title: Home Page
+title: Linear mixed models
 nav_order: 1
 ---
 
