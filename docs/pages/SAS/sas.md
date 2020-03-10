@@ -13,3 +13,5 @@ We use it because it allows to run linear mixed models.
 # Installation
 
 + download and install SAS from [download.uky.edu](https://download.uky.edu/)
+  + be aware that the installation may take several hours
+  
