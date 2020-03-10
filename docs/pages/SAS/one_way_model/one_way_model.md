@@ -4,18 +4,27 @@ nav_order: 1
 parent: SAS
 ---
 
-# Example data
+## Example data
 
 The image shows example data which you can download [here](one_way_data.xlsx)
 
 ![one_way_data](one_way_data.png)
 
-There 
+The 3 columns are as follows:
++ factor_1: one of Organ_donor, VAD, Heart_transplant
+  + the One-way model will test whether there are differences between these groups
++ grouping: a letter from a to g that indicates the "source" of the data.
+  + this factor is used to define "repeated measures".
+  + Imagine a scenario in which each letter identifies a person. In this example, we have
+    + 2 measurements from person a who is an organ donor
+    + 3 measurements from person c, one when they were a VAD recipient, and 2 when they received a transplant
+    + 2 measurements from person d, one when they were a VAD recipient, and 1 when they received a transplant.
++ y: the data we are testing
 
 
-# One-way model in SAS
+## One-way model in SAS
 
-## Code
+### Code
 
 The SAS code to run a 1-way linear mixed model is as follows (adjust your paths as required).
 
@@ -31,11 +40,6 @@ run;
 
 ods html file="C:\ken\GitHub\CampbellMuscleLab\howtos\howtos_linear_mixed_models\docs\pages\MATLAB\one_way_model\sas_results\sas_results.html";
 ods listing close;
-
-/*data work.all_data; */
-/*	modify work.all_data;*/
-/*	if y = 'NaN' then y = . ;*/
-/*run;*/
 
 proc print data=all_data;
 	title1 'All data';
@@ -74,12 +78,6 @@ The last section shows the post-hoc tests.
 
 These show:
 + Heart_transplant is different than Organ_donor, p < 0.0001
-+ Heart_transplant is different than VAD, p < 0.0001>
++ Heart_transplant is different than VAD, p < 0.0001
 + Organ_donor is different than VAD, p = 0.0121
-
-
-
-
-
-
 
