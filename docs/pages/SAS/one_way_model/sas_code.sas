@@ -10,11 +10,6 @@ run;
 ods html file="C:\ken\GitHub\CampbellMuscleLab\howtos\howtos_linear_mixed_models\docs\pages\MATLAB\one_way_model\sas_results\sas_results.html";
 ods listing close;
 
-/*data work.all_data; */
-/*	modify work.all_data;*/
-/*	if y = 'NaN' then y = . ;*/
-/*run;*/
-
 proc print data=all_data;
 	title1 'All data';
 run;

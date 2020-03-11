@@ -26,7 +26,7 @@ The 3 columns are as follows:
 
 ### Code
 
-The SAS code to run a 1-way linear mixed model is as follows (adjust your paths as required).
+The [SAS code](sas_code.sas) to run a 1-way linear mixed model is as follows (adjust your paths as required).
 
 ````
 /* SAS template for a 1 way analysis with a grouping variable */

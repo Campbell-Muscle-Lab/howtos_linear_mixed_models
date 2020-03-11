@@ -18,6 +18,7 @@ You might also know that there is a special type of t-test, called the paired sa
 Finally, remember that ANOVA can test for different factors. For example, you might have a 2-way design where you test how your measured variable depends on:
 + sex (men and women)
 + health status (in heart failure or not)
+
 and the interaction between these (that is, does the effect of heart failure depend on whether you are a man or a woman)
 
 If you have measurements for people before and after they were diagnosed with heart failure, you would also have a repeated measures design.
