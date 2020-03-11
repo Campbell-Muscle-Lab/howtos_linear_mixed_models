@@ -2,7 +2,8 @@ remote_theme: pmarsceill/just-the-docs
 
 # Auxiliary links for the upper right navigation.
 aux_links:
-  "https://github.com/Campbell-Muscle-Lab/howtos_linear_mixed_models"
+  "howtos_linear_mixed_models":
+  - "https://github.com/Campbell-Muscle-Lab/howtos_linear_mixed_models"
 
 # Not a big fan of dark mode. I think the light looks better.
 # color_scheme: "dark"
