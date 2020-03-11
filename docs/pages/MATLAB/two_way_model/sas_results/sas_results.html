@@ -1,0 +1,3223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">All data</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.ALL_DATA">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="l header" scope="col">factor_1</th>
+<th class="l header" scope="col">factor_2</th>
+<th class="l header" scope="col">prep</th>
+<th class="l header" scope="col">tag</th>
+<th class="r header" scope="col">pCa50</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">HF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">12May2015a</td>
+<td class="l data">5CCF6</td>
+<td class="r data">5.7805373865</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">HF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">12May2015b</td>
+<td class="l data">5CCF6</td>
+<td class="r data">5.8101358395</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="l data">HF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">14May2015a</td>
+<td class="l data">A3CD2</td>
+<td class="r data">5.6375819041</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="l data">HF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">14May2015b</td>
+<td class="l data">A3CD2</td>
+<td class="r data">5.6875832525</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="l data">HF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">14May2015c</td>
+<td class="l data">A3CD2</td>
+<td class="r data">5.6749024063</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="l data">HF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">19May2015b</td>
+<td class="l data">CEDF2</td>
+<td class="r data">5.7325554598</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="l data">HF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">19May2015c</td>
+<td class="l data">CEDF2</td>
+<td class="r data">5.6685420481</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="l data">HF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">22Jul2015b</td>
+<td class="l data">A8C59</td>
+<td class="r data">5.5900383353</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="l data">HF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">22Jul2015c</td>
+<td class="l data">A8C59</td>
+<td class="r data">5.6377380335</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="l data">HF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">23Jul2015a</td>
+<td class="l data">43149</td>
+<td class="r data">5.6979103201</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">11</th>
+<td class="l data">HF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">23Jul2015b</td>
+<td class="l data">43149</td>
+<td class="r data">5.6518042605</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">12</th>
+<td class="l data">HF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">25May2015c</td>
+<td class="l data">98868</td>
+<td class="r data">5.6446784002</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">13</th>
+<td class="l data">HF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">28May2015a</td>
+<td class="l data">27D6D</td>
+<td class="r data">5.6381423752</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">14</th>
+<td class="l data">HF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">28May2015b</td>
+<td class="l data">27D6D</td>
+<td class="r data">5.7078217949</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">15</th>
+<td class="l data">HF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">29Apr2015a</td>
+<td class="l data">117DD</td>
+<td class="r data">5.6021887638</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">16</th>
+<td class="l data">HF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">29Apr2015b</td>
+<td class="l data">117DD</td>
+<td class="r data">5.7318995331</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">17</th>
+<td class="l data">HF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">29Apr2015c</td>
+<td class="l data">117DD</td>
+<td class="r data">5.7306928563</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">18</th>
+<td class="l data">HF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">2May2015a</td>
+<td class="l data">59B77</td>
+<td class="r data">5.5604266329</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">19</th>
+<td class="l data">HF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">2May2015b</td>
+<td class="l data">59B77</td>
+<td class="r data">5.6166958542</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">20</th>
+<td class="l data">HF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">2May2015c</td>
+<td class="l data">59B77</td>
+<td class="r data">5.6463330611</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">21</th>
+<td class="l data">HF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">4Aug2015b</td>
+<td class="l data">668C5</td>
+<td class="r data">5.7922961928</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">22</th>
+<td class="l data">HF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">4Aug2015c</td>
+<td class="l data">668C5</td>
+<td class="r data">5.5762757577</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">23</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">13May2015a</td>
+<td class="l data">5CCF6</td>
+<td class="r data">5.7924914003</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">24</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">13May2015b</td>
+<td class="l data">5CCF6</td>
+<td class="r data">5.7598006275</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">25</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">13May2015c</td>
+<td class="l data">5CCF6</td>
+<td class="r data">5.8760591294</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">26</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">1May2015a</td>
+<td class="l data">117DD</td>
+<td class="r data">5.6819929458</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">27</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">1May2015b</td>
+<td class="l data">117DD</td>
+<td class="r data">5.7062081689</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">28</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">1May2015c</td>
+<td class="l data">117DD</td>
+<td class="r data">5.6909357742</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">29</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">20May2015a</td>
+<td class="l data">CEDF2</td>
+<td class="r data">5.6886071161</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">30</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">20May2015c</td>
+<td class="l data">CEDF2</td>
+<td class="r data">5.7762708861</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">31</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">21Jul2015a</td>
+<td class="l data">A8C59</td>
+<td class="r data">5.82777718</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">32</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">21Jul2015b</td>
+<td class="l data">A8C59</td>
+<td class="r data">5.6783419437</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">33</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">21Jul2015c</td>
+<td class="l data">A8C59</td>
+<td class="r data">5.7113973963</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">34</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">26May2015a</td>
+<td class="l data">98868</td>
+<td class="r data">5.8736086341</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">35</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">26May2015b</td>
+<td class="l data">98868</td>
+<td class="r data">5.8206055858</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">36</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">29May2015a</td>
+<td class="l data">27D6D</td>
+<td class="r data">5.7082932349</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">37</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">30Jul2015a</td>
+<td class="l data">43149</td>
+<td class="r data">5.5925683697</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">38</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">30Jul2015b</td>
+<td class="l data">43149</td>
+<td class="r data">5.5636876616</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">39</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">4Jun2015a</td>
+<td class="l data">74B28</td>
+<td class="r data">5.8186442242</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">40</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">4May2015a</td>
+<td class="l data">59B77</td>
+<td class="r data">5.8266487436</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">41</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">4May2015b</td>
+<td class="l data">59B77</td>
+<td class="r data">5.8643947215</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">42</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">4May2015c</td>
+<td class="l data">59B77</td>
+<td class="r data">5.8374949331</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">43</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">5Jun2015a</td>
+<td class="l data">661CC</td>
+<td class="r data">5.6017812294</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">44</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">5Jun2015b</td>
+<td class="l data">661CC</td>
+<td class="r data">5.6902110305</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">45</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">6Aug2015a</td>
+<td class="l data">668C5</td>
+<td class="r data">5.5911166239</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">46</th>
+<td class="l data">HF</td>
+<td class="l data">RV</td>
+<td class="l data">6Aug2015b</td>
+<td class="l data">668C5</td>
+<td class="r data">5.5197245596</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">47</th>
+<td class="l data">NF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">18Jun2015a</td>
+<td class="l data">CF462</td>
+<td class="r data">5.5091013951</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">48</th>
+<td class="l data">NF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">25Jun2015a</td>
+<td class="l data">0A105</td>
+<td class="r data">5.7927788098</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">49</th>
+<td class="l data">NF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">25Jun2015b</td>
+<td class="l data">0A105</td>
+<td class="r data">5.7754657634</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">50</th>
+<td class="l data">NF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">25Jun2015c</td>
+<td class="l data">0A105</td>
+<td class="r data">5.7752476292</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">51</th>
+<td class="l data">NF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">25Jun2015d</td>
+<td class="l data">0A105</td>
+<td class="r data">5.7837736832</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">52</th>
+<td class="l data">NF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">6Jul2015a</td>
+<td class="l data">B54F0</td>
+<td class="r data">5.3828538027</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">53</th>
+<td class="l data">NF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">6Jul2015b</td>
+<td class="l data">B54F0</td>
+<td class="r data">5.4675470745</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">54</th>
+<td class="l data">NF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">9Jul2015a</td>
+<td class="l data">BDC56</td>
+<td class="r data">5.5085021147</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">55</th>
+<td class="l data">NF</td>
+<td class="l data">LV_Mid</td>
+<td class="l data">9Jul2015b</td>
+<td class="l data">BDC56</td>
+<td class="r data">5.5800367202</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">56</th>
+<td class="l data">NF</td>
+<td class="l data">RV</td>
+<td class="l data">16Jun2015a</td>
+<td class="l data">E9D4C</td>
+<td class="r data">5.4286682185</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">57</th>
+<td class="l data">NF</td>
+<td class="l data">RV</td>
+<td class="l data">16Jun2015b</td>
+<td class="l data">E9D4C</td>
+<td class="r data">5.4321919333</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">58</th>
+<td class="l data">NF</td>
+<td class="l data">RV</td>
+<td class="l data">23Jun2015a</td>
+<td class="l data">CF462</td>
+<td class="r data">5.6604162353</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">59</th>
+<td class="l data">NF</td>
+<td class="l data">RV</td>
+<td class="l data">23Jun2015b</td>
+<td class="l data">CF462</td>
+<td class="r data">5.7148927945</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">60</th>
+<td class="l data">NF</td>
+<td class="l data">RV</td>
+<td class="l data">26Jun2015a</td>
+<td class="l data">0A105</td>
+<td class="r data">5.571680418</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">61</th>
+<td class="l data">NF</td>
+<td class="l data">RV</td>
+<td class="l data">26Jun2015b</td>
+<td class="l data">0A105</td>
+<td class="r data">5.6188139368</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">62</th>
+<td class="l data">NF</td>
+<td class="l data">RV</td>
+<td class="l data">7Jul2015a</td>
+<td class="l data">B54F0</td>
+<td class="r data">5.3798844587</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">63</th>
+<td class="l data">NF</td>
+<td class="l data">RV</td>
+<td class="l data">7Jul2015b</td>
+<td class="l data">B54F0</td>
+<td class="r data">5.3922396359</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">64</th>
+<td class="l data">NF</td>
+<td class="l data">RV</td>
+<td class="l data">7Jul2015c</td>
+<td class="l data">B54F0</td>
+<td class="r data">5.5440385701</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">65</th>
+<td class="l data">NF</td>
+<td class="l data">RV</td>
+<td class="l data">8Jul2015a</td>
+<td class="l data">BDC56</td>
+<td class="r data">5.4867312486</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">66</th>
+<td class="l data">NF</td>
+<td class="l data">RV</td>
+<td class="l data">8Jul2015b</td>
+<td class="l data">BDC56</td>
+<td class="r data">5.5010139618</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">67</th>
+<td class="l data">NF</td>
+<td class="l data">RV</td>
+<td class="l data">8Jul2015c</td>
+<td class="l data">BDC56</td>
+<td class="r data">5.5845595119</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX1"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">All data</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GLIMMIX Procedure</div>
+<p>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Glimmix: Model Information">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Model Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Data Set</th>
+<td class="l data">WORK.ALL_DATA</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Response Variable</th>
+<td class="l data">pCa50</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Response Distribution</th>
+<td class="l data">Gaussian</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Link Function</th>
+<td class="l data">Identity</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Variance Function</th>
+<td class="l data">Default</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Variance Matrix</th>
+<td class="l data">Not blocked</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Estimation Technique</th>
+<td class="l data">Restricted Maximum Likelihood</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Degrees of Freedom Method</th>
+<td class="l data">Satterthwaite</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX2"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Glimmix: Class Level Information">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Class Level Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Class</th>
+<th class="r b header" scope="col">Levels</th>
+<th class="l b header" scope="col">Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">factor_1</th>
+<td class="r data">2</td>
+<td class="l data">HF NF</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">factor_2</th>
+<td class="r data">2</td>
+<td class="l data">LV_Mid RV</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">tag</th>
+<td class="r data">17</td>
+<td class="l data">0A105 117DD 27D6D 43149 59B77 5CCF6 661CC 668C5 74B28 98868 A3CD2 A8C59 B54F0 BDC56 CEDF2 CF462 E9D4C</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX3"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Glimmix: Number of Observations">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Read</th>
+<td class="r data">67</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Used</th>
+<td class="r data">67</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX4"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Glimmix: Dimensions">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Dimensions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">G-side Cov. Parameters</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">R-side Cov. Parameters</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Columns in X</th>
+<td class="r data">9</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Columns in Z</th>
+<td class="r data">17</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Subjects (Blocks in V)</th>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Max Obs per Subject</th>
+<td class="r data">67</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX5"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Glimmix: Optimization Information">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Optimization Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Optimization Technique</th>
+<td class="l data">Dual Quasi-Newton</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Parameters in Optimization</th>
+<td class="l data">1</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Lower Boundaries</th>
+<td class="l data">1</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Upper Boundaries</th>
+<td class="l data">0</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Fixed Effects</th>
+<td class="l data">Profiled</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Residual Variance</th>
+<td class="l data">Profiled</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Starting From</th>
+<td class="l data">Data</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX6"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Glimmix: Iteration History">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="6" scope="colgroup">Iteration History</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Iteration</th>
+<th class="r b header" scope="col">Restarts</th>
+<th class="r b header" scope="col">Evaluations</th>
+<th class="r b header" scope="col">Objective<br/>Function</th>
+<th class="r b header" scope="col">Change</th>
+<th class="r b header" scope="col">Max<br/>Gradient</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">0</th>
+<th class="r rowheader" scope="row">0</th>
+<td class="r data">4</td>
+<td class="r data" nowrap>-109.0219746</td>
+<td class="r data">.</td>
+<td class="r data">1.378418</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<th class="r rowheader" scope="row">0</th>
+<td class="r data">3</td>
+<td class="r data" nowrap>-109.1334003</td>
+<td class="r data">0.11142570</td>
+<td class="r data">0.53147</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<th class="r rowheader" scope="row">0</th>
+<td class="r data">2</td>
+<td class="r data" nowrap>-109.1464363</td>
+<td class="r data">0.01303600</td>
+<td class="r data">0.195587</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<th class="r rowheader" scope="row">0</th>
+<td class="r data">2</td>
+<td class="r data" nowrap>-109.1481118</td>
+<td class="r data">0.00167547</td>
+<td class="r data">0.018235</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<th class="r rowheader" scope="row">0</th>
+<td class="r data">2</td>
+<td class="r data" nowrap>-109.1481271</td>
+<td class="r data">0.00001537</td>
+<td class="r data">0.000562</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<th class="r rowheader" scope="row">0</th>
+<td class="r data">2</td>
+<td class="r data" nowrap>-109.1481272</td>
+<td class="r data">0.00000001</td>
+<td class="r data" nowrap>1.677E-6</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX7"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Glimmix: Convergence Status">
+<colgroup>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="c data">Convergence criterion (GCONV=1E-8) satisfied.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX8"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Glimmix: Fit Statistics">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Fit Statistics</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">-2 Res Log Likelihood</th>
+<td class="r data" nowrap>-109.15</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">AIC  (smaller is better)</th>
+<td class="r data" nowrap>-105.15</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">AICC (smaller is better)</th>
+<td class="r data" nowrap>-104.95</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">BIC  (smaller is better)</th>
+<td class="r data" nowrap>-103.48</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">CAIC (smaller is better)</th>
+<td class="r data" nowrap>-101.48</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">HQIC (smaller is better)</th>
+<td class="r data" nowrap>-104.98</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Generalized Chi-Square</th>
+<td class="r data">0.40</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Gener. Chi-Square / DF</th>
+<td class="r data">0.01</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX9"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Glimmix: Covariance Parameter Estimates">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Covariance Parameter Estimates</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Cov Parm</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard<br/>Error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">tag</th>
+<td class="r data">0.004834</td>
+<td class="r data">0.002425</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Residual</th>
+<td class="r data">0.006366</td>
+<td class="r data">0.001290</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX10"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Glimmix: Type III Tests of Fixed Effects">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="5" scope="colgroup">Type III Tests of Fixed Effects</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Effect</th>
+<th class="r b header" scope="col">Num DF</th>
+<th class="r b header" scope="col">Den DF</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">factor_1</th>
+<td class="r data">1</td>
+<td class="r data">14.82</td>
+<td class="r data">10.54</td>
+<td class="r data">0.0055</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">factor_2</th>
+<td class="r data">1</td>
+<td class="r data">52.92</td>
+<td class="r data">0.01</td>
+<td class="r data">0.9190</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">factor_1*factor_2</th>
+<td class="r data">1</td>
+<td class="r data">52.92</td>
+<td class="r data">5.02</td>
+<td class="r data">0.0292</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX11"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Glimmix: factor_1 Least Squares Means">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="6" scope="colgroup">factor_1 Least Squares Means</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">factor_1</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard<br/>Error</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">t&nbsp;Value</th>
+<th class="r b header" scope="col">Pr &gt; |t|</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l data">HF</th>
+<td class="r data">5.7008</td>
+<td class="r data">0.02373</td>
+<td class="r data">15.11</td>
+<td class="r data">240.25</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l data">NF</th>
+<td class="r data">5.5597</td>
+<td class="r data">0.03641</td>
+<td class="r data">14.69</td>
+<td class="r data">152.70</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX12"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Glimmix: Differences of Least Squares Means">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="8" scope="colgroup">Differences of factor_1 Least Squares Means<br/>Adjustment for Multiple Comparisons: Tukey-Kramer</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">factor_1</th>
+<th class="l b header" scope="col">factor_1</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard Error</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">t&nbsp;Value</th>
+<th class="r b header" scope="col">Pr &gt; |t|</th>
+<th class="r b header" scope="col">Adj P</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l data">HF</th>
+<th class="l data">NF</th>
+<td class="r data">0.1411</td>
+<td class="r data">0.04346</td>
+<td class="r data">14.82</td>
+<td class="r data">3.25</td>
+<td class="r data">0.0055</td>
+<td class="r data">0.0055</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX13"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Glimmix: factor_2 Least Squares Means">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="6" scope="colgroup">factor_2 Least Squares Means</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">factor_2</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard<br/>Error</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">t&nbsp;Value</th>
+<th class="r b header" scope="col">Pr &gt; |t|</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l data">LV_Mid</th>
+<td class="r data">5.6291</td>
+<td class="r data">0.02537</td>
+<td class="r data">24.88</td>
+<td class="r data">221.85</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l data">RV</th>
+<td class="r data">5.6314</td>
+<td class="r data">0.02345</td>
+<td class="r data">20.32</td>
+<td class="r data">240.10</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX14"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Glimmix: Differences of Least Squares Means">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="8" scope="colgroup">Differences of factor_2 Least Squares Means<br/>Adjustment for Multiple Comparisons: Tukey-Kramer</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">factor_2</th>
+<th class="l b header" scope="col">factor_2</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard Error</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">t&nbsp;Value</th>
+<th class="r b header" scope="col">Pr &gt; |t|</th>
+<th class="r b header" scope="col">Adj P</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l data">LV_Mid</th>
+<th class="l data">RV</th>
+<td class="r data" nowrap>-0.00228</td>
+<td class="r data">0.02234</td>
+<td class="r data">52.92</td>
+<td class="r data" nowrap>-0.10</td>
+<td class="r data">0.9190</td>
+<td class="r data">0.9190</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX15"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Glimmix: factor_1*factor_2 Least Squares Means">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="7" scope="colgroup">factor_1*factor_2 Least Squares Means</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">factor_1</th>
+<th class="l b header" scope="col">factor_2</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard<br/>Error</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">t&nbsp;Value</th>
+<th class="r b header" scope="col">Pr &gt; |t|</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l data">HF</th>
+<th class="l data">LV_Mid</th>
+<td class="r data">5.6746</td>
+<td class="r data">0.02721</td>
+<td class="r data">23.92</td>
+<td class="r data">208.58</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l data">HF</th>
+<th class="l data">RV</th>
+<td class="r data">5.7269</td>
+<td class="r data">0.02633</td>
+<td class="r data">22.54</td>
+<td class="r data">217.51</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l data">NF</th>
+<th class="l data">LV_Mid</th>
+<td class="r data">5.5836</td>
+<td class="r data">0.04284</td>
+<td class="r data">25.29</td>
+<td class="r data">130.34</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l data">NF</th>
+<th class="l data">RV</th>
+<td class="r data">5.5358</td>
+<td class="r data">0.03882</td>
+<td class="r data">19.39</td>
+<td class="r data">142.59</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX16"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Glimmix: Differences of Least Squares Means">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="10" scope="colgroup">Differences of factor_1*factor_2 Least Squares Means<br/>Adjustment for Multiple Comparisons: Tukey-Kramer</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">factor_1</th>
+<th class="l b header" scope="col">factor_2</th>
+<th class="l b header" scope="col">factor_1</th>
+<th class="l b header" scope="col">factor_2</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard Error</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">t&nbsp;Value</th>
+<th class="r b header" scope="col">Pr &gt; |t|</th>
+<th class="r b header" scope="col">Adj P</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l data">HF</th>
+<th class="l data">LV_Mid</th>
+<th class="l data">HF</th>
+<th class="l data">RV</th>
+<td class="r data" nowrap>-0.05235</td>
+<td class="r data">0.02479</td>
+<td class="r data">53.45</td>
+<td class="r data" nowrap>-2.11</td>
+<td class="r data">0.0394</td>
+<td class="r data">0.1627</td>
+</tr>
+<tr>
+<th class="l data">HF</th>
+<th class="l data">LV_Mid</th>
+<th class="l data">NF</th>
+<th class="l data">LV_Mid</th>
+<td class="r data">0.09101</td>
+<td class="r data">0.05075</td>
+<td class="r data">24.88</td>
+<td class="r data">1.79</td>
+<td class="r data">0.0851</td>
+<td class="r data">0.2879</td>
+</tr>
+<tr>
+<th class="l data">HF</th>
+<th class="l data">LV_Mid</th>
+<th class="l data">NF</th>
+<th class="l data">RV</th>
+<td class="r data">0.1388</td>
+<td class="r data">0.04741</td>
+<td class="r data">20.76</td>
+<td class="r data">2.93</td>
+<td class="r data">0.0081</td>
+<td class="r data">0.0251</td>
+</tr>
+<tr>
+<th class="l data">HF</th>
+<th class="l data">RV</th>
+<th class="l data">NF</th>
+<th class="l data">LV_Mid</th>
+<td class="r data">0.1434</td>
+<td class="r data">0.05028</td>
+<td class="r data">24.49</td>
+<td class="r data">2.85</td>
+<td class="r data">0.0087</td>
+<td class="r data">0.0306</td>
+</tr>
+<tr>
+<th class="l data">HF</th>
+<th class="l data">RV</th>
+<th class="l data">NF</th>
+<th class="l data">RV</th>
+<td class="r data">0.1912</td>
+<td class="r data">0.04691</td>
+<td class="r data">20.32</td>
+<td class="r data">4.07</td>
+<td class="r data">0.0006</td>
+<td class="r data">0.0009</td>
+</tr>
+<tr>
+<th class="l data">NF</th>
+<th class="l data">LV_Mid</th>
+<th class="l data">NF</th>
+<th class="l data">RV</th>
+<td class="r data">0.04779</td>
+<td class="r data">0.03718</td>
+<td class="r data">52.69</td>
+<td class="r data">1.29</td>
+<td class="r data">0.2043</td>
+<td class="r data">0.5761</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX17"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Glimmix: Tests of Effect Slices for factor_1*factor_2 Sliced By factor_1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="5" scope="colgroup">Tests of Effect Slices for factor_1*factor_2<br/>Sliced By factor_1</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">factor_1</th>
+<th class="r b header" scope="col">Num DF</th>
+<th class="r b header" scope="col">Den DF</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l data">HF</th>
+<td class="r data">1</td>
+<td class="r data">53.45</td>
+<td class="r data">4.46</td>
+<td class="r data">0.0394</td>
+</tr>
+<tr>
+<th class="l data">NF</th>
+<td class="r data">1</td>
+<td class="r data">52.69</td>
+<td class="r data">1.65</td>
+<td class="r data">0.2043</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX18"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Glimmix: Tests of Effect Slices for factor_1*factor_2 Sliced By factor_2">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="5" scope="colgroup">Tests of Effect Slices for factor_1*factor_2<br/>Sliced By factor_2</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">factor_2</th>
+<th class="r b header" scope="col">Num DF</th>
+<th class="r b header" scope="col">Den DF</th>
+<th class="r b header" scope="col">F Value</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l data">LV_Mid</th>
+<td class="r data">1</td>
+<td class="r data">24.88</td>
+<td class="r data">3.22</td>
+<td class="r data">0.0851</td>
+</tr>
+<tr>
+<th class="l data">RV</th>
+<td class="r data">1</td>
+<td class="r data">20.32</td>
+<td class="r data">16.61</td>
+<td class="r data">0.0006</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX19"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Glimmix: Simple Effect Comparisons of factor_1*factor_2 Least Squares Means By factor_1">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="9" scope="colgroup">Simple Effect Comparisons of factor_1*factor_2 Least Squares Means By factor_1<br/> Adjustment for Multiple Comparisons: Tukey-Kramer</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Simple Effect Level</th>
+<th class="l b header" scope="col">factor_2</th>
+<th class="l b header" scope="col">factor_2</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard<br/>Error</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">t&nbsp;Value</th>
+<th class="r b header" scope="col">Pr &gt; |t|</th>
+<th class="r b header" scope="col">Adj P</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">factor_1 HF</th>
+<th class="l data">LV_Mid</th>
+<th class="l data">RV</th>
+<td class="r data" nowrap>-0.05235</td>
+<td class="r data">0.02479</td>
+<td class="r data">53.45</td>
+<td class="r data" nowrap>-2.11</td>
+<td class="r data">0.0394</td>
+<td class="r data">0.0394</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">factor_1 NF</th>
+<th class="l data">LV_Mid</th>
+<th class="l data">RV</th>
+<td class="r data">0.04779</td>
+<td class="r data">0.03718</td>
+<td class="r data">52.69</td>
+<td class="r data">1.29</td>
+<td class="r data">0.2043</td>
+<td class="r data">0.2042</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX20"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Glimmix: Simple Effect Comparisons of factor_1*factor_2 Least Squares Means By factor_2">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="9" scope="colgroup">Simple Effect Comparisons of factor_1*factor_2 Least Squares Means By factor_2<br/> Adjustment for Multiple Comparisons: Tukey-Kramer</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Simple Effect Level</th>
+<th class="l b header" scope="col">factor_1</th>
+<th class="l b header" scope="col">factor_1</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard<br/>Error</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">t&nbsp;Value</th>
+<th class="r b header" scope="col">Pr &gt; |t|</th>
+<th class="r b header" scope="col">Adj P</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">factor_2 LV_Mid</th>
+<th class="l data">HF</th>
+<th class="l data">NF</th>
+<td class="r data">0.09101</td>
+<td class="r data">0.05075</td>
+<td class="r data">24.88</td>
+<td class="r data">1.79</td>
+<td class="r data">0.0851</td>
+<td class="r data">0.0786</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">factor_2 RV</th>
+<th class="l data">HF</th>
+<th class="l data">NF</th>
+<td class="r data">0.1912</td>
+<td class="r data">0.04691</td>
+<td class="r data">20.32</td>
+<td class="r data">4.07</td>
+<td class="r data">0.0006</td>
+<td class="r data">0.0002</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>

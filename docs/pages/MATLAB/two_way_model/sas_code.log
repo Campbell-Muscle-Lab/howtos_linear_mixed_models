@@ -1,4 +1,4 @@
-1                                         The SAS System           11:25 Wednesday, March 11, 2020
+1                                         The SAS System           11:40 Wednesday, March 11, 2020
 
 NOTE: Copyright (c) 2002-2012 by SAS Institute Inc., Cary, NC, USA. 
 NOTE: SAS (r) Proprietary Software 9.4 (TS1M3) 
@@ -20,60 +20,56 @@ NOTE: Additional host information:
  X64_8PRO WIN 6.2.9200  Workstation
 
 NOTE: SAS initialization used:
-      real time           1.39 seconds
-      cpu time            0.63 seconds
+      real time           1.07 seconds
+      cpu time            0.71 seconds
       
-1          /* SAS template for a 1 way analysis with a grouping variable */
+1          /* SAS template for a 2 way analysis with a grouping variable */
 2          
 3          proc import out = work.all_data
 4          	datafile =
-4        ! "C:\ken\GitHub\CampbellMuscleLab\howtos\howtos_linear_mixed_models\docs\pages\MATLAB\on
-4        ! e_way_model\data\one_way_data.xlsx"
+4        ! "C:\ken\GitHub\CampbellMuscleLab\howtos\howtos_linear_mixed_models\docs\pages\MATLAB\tw
+4        ! o_way_model\data\two_way_data.xlsx"
 5          	dbms = xlsx replace;
 6          	sheet = "Sheet1";
 7          	getnames=yes;
 8          run;
 
-NOTE: The import data set has 11 observations and 3 variables.
+NOTE: The import data set has 67 observations and 5 variables.
 NOTE: WORK.ALL_DATA data set was successfully created.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           0.02 seconds
+      real time           0.04 seconds
       cpu time            0.01 seconds
       
 
 9          
 10         ods html
 10       ! file="C:\ken\GitHub\CampbellMuscleLab\howtos\howtos_linear_mixed_models\docs\pages\MATL
-10       ! AB\one_way_model\sas_results\sas_results.html";
+10       ! AB\two_way_model\sas_results\sas_results.html";
 NOTE: Writing HTML Body file: 
-      C:\ken\GitHub\CampbellMuscleLab\howtos\howtos_linear_mixed_models\docs\pages\MATLAB\one_way_
+      C:\ken\GitHub\CampbellMuscleLab\howtos\howtos_linear_mixed_models\docs\pages\MATLAB\two_way_
       model\sas_results\sas_results.html
 11         ods listing close;
 12         
-13         /*data work.all_data; */
-14         /*	modify work.all_data;*/
-15         /*	if y = 'NaN' then y = . ;*/
-2                                         The SAS System           11:25 Wednesday, March 11, 2020
+13         proc print data=all_data;
+14         	title1 'All data';
+15         run;
+2                                         The SAS System           11:40 Wednesday, March 11, 2020
 
-16         /*run;*/
-17         
-18         proc print data=all_data;
-19         	title1 'All data';
-20         run;
 
-NOTE: There were 11 observations read from the data set WORK.ALL_DATA.
+NOTE: There were 67 observations read from the data set WORK.ALL_DATA.
 NOTE: PROCEDURE PRINT used (Total process time):
-      real time           0.03 seconds
+      real time           0.01 seconds
       cpu time            0.01 seconds
       
 
-21         
-22         proc glimmix data=all_data;
-23         	class factor_1 grouping;
-24         	model y = factor_1 /ddfm=satterthwaite;
-25         	random grouping;
-26         	lsmeans factor_1 /slice = factor_1 pdiff adjust=tukey;
-27         run;
+16         
+17         proc glimmix data=all_data;
+18         	class factor_1 factor_2 tag;
+19         	model pCa50 = factor_1 factor_2 factor_1*factor_2 /ddfm=satterthwaite;
+20         	random tag;
+21         	lsmeans factor_1 factor_2 factor_1*factor_2 /slice = factor_1 slice = factor_2
+21       ! slicediff=(factor_1 factor_2) pdiff adjust=tukey;
+22         run;
 
 NOTE: With DDFM=SATTERTHWAITE or DDFM=KENWARDROGER, unadjusted p-values in tests are based on the 
       degrees of freedom specific to that comparison. P-values that are adjusted for 
@@ -85,17 +81,17 @@ NOTE: With DDFM=SATTERTHWAITE or DDFM=KENWARDROGER, unadjusted p-values in tests
 
 NOTE: Convergence criterion (GCONV=1E-8) satisfied.
 NOTE: PROCEDURE GLIMMIX used (Total process time):
-      real time           0.26 seconds
-      cpu time            0.09 seconds
+      real time           0.40 seconds
+      cpu time            0.15 seconds
       
 
-28         
-29         ods listing;
-30         ods html close;
-31         
+23         
+24         ods listing;
+25         ods html close;
+26         
 
 NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
 NOTE: The SAS System used:
-      real time           2.87 seconds
-      cpu time            1.46 seconds
+      real time           2.72 seconds
+      cpu time            1.65 seconds
       
