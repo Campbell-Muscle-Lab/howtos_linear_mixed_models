@@ -1,4 +1,4 @@
-1                                         The SAS System             20:08 Tuesday, March 10, 2020
+1                                         The SAS System             20:23 Tuesday, March 10, 2020
 
 NOTE: Copyright (c) 2002-2012 by SAS Institute Inc., Cary, NC, USA. 
 NOTE: SAS (r) Proprietary Software 9.4 (TS1M3) 
@@ -20,8 +20,8 @@ NOTE: Additional host information:
  X64_8PRO WIN 6.2.9200  Workstation
 
 NOTE: SAS initialization used:
-      real time           0.95 seconds
-      cpu time            0.64 seconds
+      real time           0.90 seconds
+      cpu time            0.68 seconds
       
 1          /* SAS template for a 1 way analysis with a grouping variable */
 2          
@@ -37,7 +37,7 @@ NOTE: SAS initialization used:
 NOTE: The import data set has 11 observations and 3 variables.
 NOTE: WORK.ALL_DATA data set was successfully created.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           0.01 seconds
+      real time           0.02 seconds
       cpu time            0.01 seconds
       
 
@@ -53,7 +53,7 @@ NOTE: Writing HTML Body file:
 13         /*data work.all_data; */
 14         /*	modify work.all_data;*/
 15         /*	if y = 'NaN' then y = . ;*/
-2                                         The SAS System             20:08 Tuesday, March 10, 2020
+2                                         The SAS System             20:23 Tuesday, March 10, 2020
 
 16         /*run;*/
 17         
@@ -63,7 +63,7 @@ NOTE: Writing HTML Body file:
 
 NOTE: There were 11 observations read from the data set WORK.ALL_DATA.
 NOTE: PROCEDURE PRINT used (Total process time):
-      real time           0.00 seconds
+      real time           0.04 seconds
       cpu time            0.01 seconds
       
 
@@ -85,8 +85,8 @@ NOTE: With DDFM=SATTERTHWAITE or DDFM=KENWARDROGER, unadjusted p-values in tests
 
 NOTE: Convergence criterion (GCONV=1E-8) satisfied.
 NOTE: PROCEDURE GLIMMIX used (Total process time):
-      real time           0.15 seconds
-      cpu time            0.06 seconds
+      real time           0.17 seconds
+      cpu time            0.10 seconds
       
 
 28         
@@ -96,6 +96,6 @@ NOTE: PROCEDURE GLIMMIX used (Total process time):
 
 NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
 NOTE: The SAS System used:
-      real time           2.29 seconds
-      cpu time            1.49 seconds
+      real time           2.28 seconds
+      cpu time            1.59 seconds
       
