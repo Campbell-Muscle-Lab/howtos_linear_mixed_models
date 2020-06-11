@@ -1,7 +1,7 @@
 /* SAS template for a 2 way analysis with a grouping variable */
 
 proc import out = work.all_data
-	datafile = "C:\ken\GitHub\CampbellMuscleLab\howtos\howtos_linear_mixed_models\docs\pages\MATLAB\two_way_model\data\two_way_data.xlsx"
+	datafile = "C:\ken\GitHub\CampbellMuscleLab\howtos\howtos_linear_mixed_models\docs\pages\MATLAB\two_way_model\temp.xlsx"
 	dbms = xlsx replace;
 	sheet = "Sheet1";
 	getnames=yes;

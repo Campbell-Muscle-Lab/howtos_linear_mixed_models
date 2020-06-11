@@ -6,6 +6,19 @@
 <title>SAS Output</title>
 <style type="text/css">
 <!--
+.accessiblecaption
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.activelink
+{
+  color: #800080;
+}
 .aftercaption
 {
   background-color: #FAFBFE;
@@ -647,6 +660,30 @@ color:#800080
   font-style: normal;
   font-weight: bold;
 }
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
 .index
 {
   background-color: #FAFBFE;
@@ -718,6 +755,10 @@ color:#800080
   font-size: x-small;
   font-style: normal;
   font-weight: normal;
+}
+.link
+{
+  color: #0000FF;
 }
 .list
 {
@@ -1543,6 +1584,10 @@ color:#800080
   font-style: normal;
   font-weight: normal;
 }
+.visitedlink
+{
+  color: #800080;
+}
 .warnbanner
 {
   background-color: #FAFBFE;
@@ -1626,14 +1671,12 @@ var _ie64 = _info.indexOf("x64") > 0
 <col>
 <col>
 <col>
-<col>
 </colgroup>
 <thead>
 <tr>
 <th class="r header" scope="col">Obs</th>
 <th class="l header" scope="col">factor_1</th>
 <th class="l header" scope="col">factor_2</th>
-<th class="l header" scope="col">prep</th>
 <th class="l header" scope="col">tag</th>
 <th class="r header" scope="col">pCa50</th>
 </tr>
@@ -1643,7 +1686,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">1</th>
 <td class="l data">HF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">12May2015a</td>
 <td class="l data">5CCF6</td>
 <td class="r data">5.7805373865</td>
 </tr>
@@ -1651,7 +1693,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">2</th>
 <td class="l data">HF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">12May2015b</td>
 <td class="l data">5CCF6</td>
 <td class="r data">5.8101358395</td>
 </tr>
@@ -1659,7 +1700,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">3</th>
 <td class="l data">HF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">14May2015a</td>
 <td class="l data">A3CD2</td>
 <td class="r data">5.6375819041</td>
 </tr>
@@ -1667,7 +1707,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">4</th>
 <td class="l data">HF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">14May2015b</td>
 <td class="l data">A3CD2</td>
 <td class="r data">5.6875832525</td>
 </tr>
@@ -1675,7 +1714,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">5</th>
 <td class="l data">HF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">14May2015c</td>
 <td class="l data">A3CD2</td>
 <td class="r data">5.6749024063</td>
 </tr>
@@ -1683,7 +1721,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">6</th>
 <td class="l data">HF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">19May2015b</td>
 <td class="l data">CEDF2</td>
 <td class="r data">5.7325554598</td>
 </tr>
@@ -1691,7 +1728,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">7</th>
 <td class="l data">HF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">19May2015c</td>
 <td class="l data">CEDF2</td>
 <td class="r data">5.6685420481</td>
 </tr>
@@ -1699,7 +1735,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">8</th>
 <td class="l data">HF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">22Jul2015b</td>
 <td class="l data">A8C59</td>
 <td class="r data">5.5900383353</td>
 </tr>
@@ -1707,7 +1742,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">9</th>
 <td class="l data">HF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">22Jul2015c</td>
 <td class="l data">A8C59</td>
 <td class="r data">5.6377380335</td>
 </tr>
@@ -1715,7 +1749,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">10</th>
 <td class="l data">HF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">23Jul2015a</td>
 <td class="l data">43149</td>
 <td class="r data">5.6979103201</td>
 </tr>
@@ -1723,7 +1756,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">11</th>
 <td class="l data">HF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">23Jul2015b</td>
 <td class="l data">43149</td>
 <td class="r data">5.6518042605</td>
 </tr>
@@ -1731,7 +1763,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">12</th>
 <td class="l data">HF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">25May2015c</td>
 <td class="l data">98868</td>
 <td class="r data">5.6446784002</td>
 </tr>
@@ -1739,7 +1770,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">13</th>
 <td class="l data">HF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">28May2015a</td>
 <td class="l data">27D6D</td>
 <td class="r data">5.6381423752</td>
 </tr>
@@ -1747,7 +1777,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">14</th>
 <td class="l data">HF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">28May2015b</td>
 <td class="l data">27D6D</td>
 <td class="r data">5.7078217949</td>
 </tr>
@@ -1755,7 +1784,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">15</th>
 <td class="l data">HF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">29Apr2015a</td>
 <td class="l data">117DD</td>
 <td class="r data">5.6021887638</td>
 </tr>
@@ -1763,7 +1791,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">16</th>
 <td class="l data">HF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">29Apr2015b</td>
 <td class="l data">117DD</td>
 <td class="r data">5.7318995331</td>
 </tr>
@@ -1771,7 +1798,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">17</th>
 <td class="l data">HF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">29Apr2015c</td>
 <td class="l data">117DD</td>
 <td class="r data">5.7306928563</td>
 </tr>
@@ -1779,7 +1805,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">18</th>
 <td class="l data">HF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">2May2015a</td>
 <td class="l data">59B77</td>
 <td class="r data">5.5604266329</td>
 </tr>
@@ -1787,7 +1812,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">19</th>
 <td class="l data">HF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">2May2015b</td>
 <td class="l data">59B77</td>
 <td class="r data">5.6166958542</td>
 </tr>
@@ -1795,7 +1819,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">20</th>
 <td class="l data">HF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">2May2015c</td>
 <td class="l data">59B77</td>
 <td class="r data">5.6463330611</td>
 </tr>
@@ -1803,7 +1826,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">21</th>
 <td class="l data">HF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">4Aug2015b</td>
 <td class="l data">668C5</td>
 <td class="r data">5.7922961928</td>
 </tr>
@@ -1811,7 +1833,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">22</th>
 <td class="l data">HF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">4Aug2015c</td>
 <td class="l data">668C5</td>
 <td class="r data">5.5762757577</td>
 </tr>
@@ -1819,7 +1840,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">23</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">13May2015a</td>
 <td class="l data">5CCF6</td>
 <td class="r data">5.7924914003</td>
 </tr>
@@ -1827,7 +1847,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">24</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">13May2015b</td>
 <td class="l data">5CCF6</td>
 <td class="r data">5.7598006275</td>
 </tr>
@@ -1835,7 +1854,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">25</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">13May2015c</td>
 <td class="l data">5CCF6</td>
 <td class="r data">5.8760591294</td>
 </tr>
@@ -1843,7 +1861,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">26</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">1May2015a</td>
 <td class="l data">117DD</td>
 <td class="r data">5.6819929458</td>
 </tr>
@@ -1851,7 +1868,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">27</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">1May2015b</td>
 <td class="l data">117DD</td>
 <td class="r data">5.7062081689</td>
 </tr>
@@ -1859,7 +1875,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">28</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">1May2015c</td>
 <td class="l data">117DD</td>
 <td class="r data">5.6909357742</td>
 </tr>
@@ -1867,7 +1882,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">29</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">20May2015a</td>
 <td class="l data">CEDF2</td>
 <td class="r data">5.6886071161</td>
 </tr>
@@ -1875,7 +1889,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">30</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">20May2015c</td>
 <td class="l data">CEDF2</td>
 <td class="r data">5.7762708861</td>
 </tr>
@@ -1883,7 +1896,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">31</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">21Jul2015a</td>
 <td class="l data">A8C59</td>
 <td class="r data">5.82777718</td>
 </tr>
@@ -1891,7 +1903,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">32</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">21Jul2015b</td>
 <td class="l data">A8C59</td>
 <td class="r data">5.6783419437</td>
 </tr>
@@ -1899,7 +1910,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">33</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">21Jul2015c</td>
 <td class="l data">A8C59</td>
 <td class="r data">5.7113973963</td>
 </tr>
@@ -1907,7 +1917,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">34</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">26May2015a</td>
 <td class="l data">98868</td>
 <td class="r data">5.8736086341</td>
 </tr>
@@ -1915,7 +1924,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">35</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">26May2015b</td>
 <td class="l data">98868</td>
 <td class="r data">5.8206055858</td>
 </tr>
@@ -1923,7 +1931,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">36</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">29May2015a</td>
 <td class="l data">27D6D</td>
 <td class="r data">5.7082932349</td>
 </tr>
@@ -1931,7 +1938,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">37</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">30Jul2015a</td>
 <td class="l data">43149</td>
 <td class="r data">5.5925683697</td>
 </tr>
@@ -1939,7 +1945,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">38</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">30Jul2015b</td>
 <td class="l data">43149</td>
 <td class="r data">5.5636876616</td>
 </tr>
@@ -1947,7 +1952,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">39</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">4Jun2015a</td>
 <td class="l data">74B28</td>
 <td class="r data">5.8186442242</td>
 </tr>
@@ -1955,7 +1959,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">40</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">4May2015a</td>
 <td class="l data">59B77</td>
 <td class="r data">5.8266487436</td>
 </tr>
@@ -1963,7 +1966,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">41</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">4May2015b</td>
 <td class="l data">59B77</td>
 <td class="r data">5.8643947215</td>
 </tr>
@@ -1971,7 +1973,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">42</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">4May2015c</td>
 <td class="l data">59B77</td>
 <td class="r data">5.8374949331</td>
 </tr>
@@ -1979,7 +1980,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">43</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">5Jun2015a</td>
 <td class="l data">661CC</td>
 <td class="r data">5.6017812294</td>
 </tr>
@@ -1987,7 +1987,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">44</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">5Jun2015b</td>
 <td class="l data">661CC</td>
 <td class="r data">5.6902110305</td>
 </tr>
@@ -1995,7 +1994,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">45</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">6Aug2015a</td>
 <td class="l data">668C5</td>
 <td class="r data">5.5911166239</td>
 </tr>
@@ -2003,7 +2001,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">46</th>
 <td class="l data">HF</td>
 <td class="l data">RV</td>
-<td class="l data">6Aug2015b</td>
 <td class="l data">668C5</td>
 <td class="r data">5.5197245596</td>
 </tr>
@@ -2011,7 +2008,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">47</th>
 <td class="l data">NF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">18Jun2015a</td>
 <td class="l data">CF462</td>
 <td class="r data">5.5091013951</td>
 </tr>
@@ -2019,7 +2015,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">48</th>
 <td class="l data">NF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">25Jun2015a</td>
 <td class="l data">0A105</td>
 <td class="r data">5.7927788098</td>
 </tr>
@@ -2027,7 +2022,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">49</th>
 <td class="l data">NF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">25Jun2015b</td>
 <td class="l data">0A105</td>
 <td class="r data">5.7754657634</td>
 </tr>
@@ -2035,7 +2029,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">50</th>
 <td class="l data">NF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">25Jun2015c</td>
 <td class="l data">0A105</td>
 <td class="r data">5.7752476292</td>
 </tr>
@@ -2043,7 +2036,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">51</th>
 <td class="l data">NF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">25Jun2015d</td>
 <td class="l data">0A105</td>
 <td class="r data">5.7837736832</td>
 </tr>
@@ -2051,7 +2043,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">52</th>
 <td class="l data">NF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">6Jul2015a</td>
 <td class="l data">B54F0</td>
 <td class="r data">5.3828538027</td>
 </tr>
@@ -2059,7 +2050,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">53</th>
 <td class="l data">NF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">6Jul2015b</td>
 <td class="l data">B54F0</td>
 <td class="r data">5.4675470745</td>
 </tr>
@@ -2067,7 +2057,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">54</th>
 <td class="l data">NF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">9Jul2015a</td>
 <td class="l data">BDC56</td>
 <td class="r data">5.5085021147</td>
 </tr>
@@ -2075,7 +2064,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">55</th>
 <td class="l data">NF</td>
 <td class="l data">LV_Mid</td>
-<td class="l data">9Jul2015b</td>
 <td class="l data">BDC56</td>
 <td class="r data">5.5800367202</td>
 </tr>
@@ -2083,7 +2071,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">56</th>
 <td class="l data">NF</td>
 <td class="l data">RV</td>
-<td class="l data">16Jun2015a</td>
 <td class="l data">E9D4C</td>
 <td class="r data">5.4286682185</td>
 </tr>
@@ -2091,7 +2078,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">57</th>
 <td class="l data">NF</td>
 <td class="l data">RV</td>
-<td class="l data">16Jun2015b</td>
 <td class="l data">E9D4C</td>
 <td class="r data">5.4321919333</td>
 </tr>
@@ -2099,7 +2085,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">58</th>
 <td class="l data">NF</td>
 <td class="l data">RV</td>
-<td class="l data">23Jun2015a</td>
 <td class="l data">CF462</td>
 <td class="r data">5.6604162353</td>
 </tr>
@@ -2107,7 +2092,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">59</th>
 <td class="l data">NF</td>
 <td class="l data">RV</td>
-<td class="l data">23Jun2015b</td>
 <td class="l data">CF462</td>
 <td class="r data">5.7148927945</td>
 </tr>
@@ -2115,7 +2099,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">60</th>
 <td class="l data">NF</td>
 <td class="l data">RV</td>
-<td class="l data">26Jun2015a</td>
 <td class="l data">0A105</td>
 <td class="r data">5.571680418</td>
 </tr>
@@ -2123,7 +2106,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">61</th>
 <td class="l data">NF</td>
 <td class="l data">RV</td>
-<td class="l data">26Jun2015b</td>
 <td class="l data">0A105</td>
 <td class="r data">5.6188139368</td>
 </tr>
@@ -2131,7 +2113,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">62</th>
 <td class="l data">NF</td>
 <td class="l data">RV</td>
-<td class="l data">7Jul2015a</td>
 <td class="l data">B54F0</td>
 <td class="r data">5.3798844587</td>
 </tr>
@@ -2139,7 +2120,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">63</th>
 <td class="l data">NF</td>
 <td class="l data">RV</td>
-<td class="l data">7Jul2015b</td>
 <td class="l data">B54F0</td>
 <td class="r data">5.3922396359</td>
 </tr>
@@ -2147,7 +2127,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">64</th>
 <td class="l data">NF</td>
 <td class="l data">RV</td>
-<td class="l data">7Jul2015c</td>
 <td class="l data">B54F0</td>
 <td class="r data">5.5440385701</td>
 </tr>
@@ -2155,7 +2134,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">65</th>
 <td class="l data">NF</td>
 <td class="l data">RV</td>
-<td class="l data">8Jul2015a</td>
 <td class="l data">BDC56</td>
 <td class="r data">5.4867312486</td>
 </tr>
@@ -2163,7 +2141,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">66</th>
 <td class="l data">NF</td>
 <td class="l data">RV</td>
-<td class="l data">8Jul2015b</td>
 <td class="l data">BDC56</td>
 <td class="r data">5.5010139618</td>
 </tr>
@@ -2171,7 +2148,6 @@ var _ie64 = _info.indexOf("x64") > 0
 <th class="r rowheader" scope="row">67</th>
 <td class="l data">NF</td>
 <td class="l data">RV</td>
-<td class="l data">8Jul2015c</td>
 <td class="l data">BDC56</td>
 <td class="r data">5.5845595119</td>
 </tr>
