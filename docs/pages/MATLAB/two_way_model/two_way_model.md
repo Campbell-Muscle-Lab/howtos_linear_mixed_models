@@ -14,11 +14,10 @@ Make sure you have read and understand the [accompanying SAS page](..\..\SAS\two
 
 # Implementation
 
-MATLAB needs a place to store the SAS code and the SAS output file. Create the following sub-folders
+MATLAB needs a place to store the SAS code and the SAS output file. You neeed the following sub-folders
 + sas_code
 + sas_results
-
-in your working directory.
+in your working directory. These should be created as part of the repo.
 
 Then run [two_way_linear_mixed_model.m](two_way_linear_mixed_model.m)
 
@@ -28,16 +27,20 @@ function two_way_linear_mixed_model
 
 data_file_string = 'data\two_way_data.xlsx';
 
+% Read data
+d = readtable(data_file_string);
+
+% Run the model
 two_way_jitter( ...
-    data_file_string, ...
-    'pCa50', ...
-    'factor_1', ...
-    'factor_2', ...
-    'excel_sheet', 'Sheet1', ...
+    'data_table', d, ...
+    'test_variable', 'pCa50', ...
+    'factor_1', 'factor_1', ...
+    'factor_2', 'factor_2', ...
     'grouping', 'tag', ...
     'calling_path_string', cd, ...
     'y_from_zero',0)
 
+% Save the figure to an image file
 print('two_way_jitter.png','-dpng')
 ````
 
